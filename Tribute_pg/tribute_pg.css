@@ -1,0 +1,64 @@
+body{
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    background-color: #f7f4ef;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    color: white;
+    font-size: 4em;
+}
+h2{
+    font-size: 2em;
+}
+#top-frame{
+    background-color: #788402;
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+}
+#bio-card-container{
+    display: grid;
+    gap: 10px 30px;
+    grid-template-columns: 3fr 1fr;
+}
+.bio-card{
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 5px  #5b6311;
+}
+#KH{
+    align-items: center;
+    padding: 20px;
+    background-color: #feaa00;
+    border-radius: 50px 20px 50px 10px;
+    box-shadow: 20px;
+}
+#KH img{
+    width: 300px;
+    image-rendering:optimizeQuality;
+    border-radius: 50px 5px 50px 5px;
+}
+#works{
+    margin-top: 5px;
+    background-color: #feaa00;
+    color: white;
+    padding: 40px;
+    border-radius: 20px;    
+}
+#card-container{
+    display: grid;
+    gap: 10px 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card{
+    padding: 20px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 5px #cd8a05;
+}
+#works img{
+    max-width: 270px;
+    align-items: center;
+}

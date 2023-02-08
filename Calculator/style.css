@@ -1,0 +1,146 @@
+body {
+    margin: auto;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+h1{
+    color: white;
+    font-size: xx-large;
+    margin: 40px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#container {
+    background-color: #333;
+    box-shadow: 0 5px 5px #111;
+    padding: 20px;
+    border-radius: 10px;
+    border-style: inset;
+    border-color: aqua;
+    display: inline-block;
+}
+
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+#container .row:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+#container input,
+#container button {
+    float: left;
+}
+
+#container input:focus,
+#container button:focus {
+    outline: none;
+}
+
+#container input {
+    background-color: #333333b6;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-right: 8px;
+    font-size: 22px;
+    font-weight: 300;
+    height: 80px;
+    padding-right: 14px;
+    text-align: right;
+    width: 235px;
+}
+
+#container button {
+    background-color: rgb(95, 191, 230);
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 rgba(0, 183, 255, 0.676);
+    color: white;
+    font-size: 20px;
+    height: 80px;
+    margin-right: 7px;
+    width: 80px;
+}
+
+#container button:active {
+    box-shadow: 0 2px 0 skyblue;
+    transform: translateY(1px);
+}
+
+#container #clear,
+#container .operator,
+#container #equals {
+    color: white;
+}
+
+#container #clear,
+#container .operator {
+    margin-right: 0;
+}
+
+#container #clear {
+    background-color: #39e539;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+#container #clear:active {
+    box-shadow: none;
+    transform: none;
+}
+
+#container .operator {
+    background-color: rgba(255, 20, 145, 0.92);
+    box-shadow: 0 3px 3px rgba(255, 0, 136, 0.509);
+}
+
+#container .operator:active {
+    box-shadow: 0 2px 2px deeppink;
+}
+
+#container #equals {
+    background-color: deeppink;
+    box-shadow: 0 3px 3px rgba(255, 0, 136, 0.509);
+}
+
+#container #equals:active {
+    box-shadow: 0 2px 2px deeppink;
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    #container {
+        padding: 16px;
+    }
+
+    #container .row:not(:last-child) {
+        margin-bottom: 7px;
+    }
+
+    #container input {
+        font-size: 18px;
+        height: 60px;
+        padding-right: 10px;
+        width: 195px;
+    }
+
+    #container button {
+        font-size: 16px;
+        height: 60px;
+        margin-right: 5px;
+        width: 60px;
+    }
+}
